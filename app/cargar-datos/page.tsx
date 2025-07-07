@@ -21,7 +21,7 @@ export default function CargarDatos() {
   })
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/direccion')
+    fetch('https://botbck25.onrender.com/api/direccion')
       .then(res => res.json())
       .then(data => {
         if (data && Object.keys(data).length > 0) {
@@ -49,7 +49,7 @@ export default function CargarDatos() {
 
   async function handleSave() {
     try {
-      const res = await fetch('http://localhost:5000/api/direccion', {
+      const res = await fetch('https://botbck25.onrender.com/api/direccion', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
