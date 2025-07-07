@@ -1,0 +1,77 @@
+.container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .qrContainer {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px dashed #ccc;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    user-select: none;
+    overflow: hidden;
+    font-size: 3rem;
+  }
+  
+  .qrImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    font-size: initial;
+  }
+  
+  .statusBox {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  
+  .statusCircle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  .btnActive {
+    background-color: red;
+  }
+  
+  .btnInactive {
+    background-color: green;
+  }
+  
+  @media (max-width: 400px) {
+    .qrContainer {
+      width: 80vw;
+      height: 80vw;
+      font-size: 2rem;
+    }
+  }
+  

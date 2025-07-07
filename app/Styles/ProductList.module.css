@@ -1,0 +1,122 @@
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+  }
+  
+  .info {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .price {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+  }
+  
+  .discount {
+    color: #f44336;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .oferta {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .editBtn,
+  .deleteBtn,
+  .saveBtn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .deleteBtn {
+    background-color: #d32f2f;
+  }
+  
+  .editBtn:hover {
+    background-color: #115293;
+  }
+  
+  .deleteBtn:hover {
+    background-color: #9a1c1c;
+  }
+  
+  .saveBtn:hover {
+    background-color: #115293;
+  }
+  
+  .input {
+    width: 90%;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .fullMessage {
+    grid-column: 1/-1;
+    color: #d32f2f;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
