@@ -14,7 +14,7 @@ export default function Home() {
 
   const fetchQr = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/qr');
+      const res = await axios.get('https://botbck25.onrender.com/api/qr');
       if (res.data.qr) setQr(res.data.qr);
       else setQr(null);
     } catch (error) {
@@ -24,7 +24,7 @@ export default function Home() {
 
   const checkStatus = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/status');
+      const res = await axios.get('https://botbck25.onrender.com/api/status');
       setStatus(res.data.status);
 
       const alreadyShown = localStorage.getItem('alertShown') === 'true';
@@ -49,7 +49,7 @@ export default function Home() {
 
   const fetchUserCount = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/users');
+      const res = await axios.get('https://botbck25.onrender.com/api/users');
       setUserCount(res.data.count || 0);
     } catch (error) {
       console.error('Error al obtener el número de usuarios:', error);
@@ -60,7 +60,7 @@ export default function Home() {
     setLoading(true);
     try {
       if (status === 'activo') {
-        await axios.get('http://localhost:5000/api/logout');
+        await axios.get('https://botbck25.onrender.com/api/logout');
         Swal.fire('Sesión cerrada', 'El bot se desconectó.', 'info');
       } else {
         await axios.get('http://localhost:5000/api/qr');
