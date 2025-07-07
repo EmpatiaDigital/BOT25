@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 // import Navbar from './components/Navbar.js';
-import styles from './styles/Home.module.css';
+import styles from './Styles/Home.module.css';
 
 export default function Home() {
   const [qr, setQr] = useState(null);
