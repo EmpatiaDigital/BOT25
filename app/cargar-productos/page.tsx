@@ -28,7 +28,7 @@ export default function ProductList() {
 
   async function fetchProducts() {
     try {
-      const res = await fetch("http://localhost:5000/api/products");
+      const res = await fetch("https://botbck25.onrender.com/api/products");
       if (!res.ok) throw new Error("Error al cargar productos");
       const data = await res.json();
       const normalized = data.map((p: any) => ({
@@ -73,7 +73,7 @@ export default function ProductList() {
     try {
       if (editingId) {
         // editar producto
-        const res = await fetch(`http://localhost:5000/api/products/${editingId}`, {
+        const res = await fetch(`https://botbck25.onrender.com/api/products/${editingId}`, {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -96,7 +96,7 @@ export default function ProductList() {
           );
           return;
         }
-        const res = await fetch("http://localhost:5000/api/products", {
+        const res = await fetch("https://botbck25.onrender.com/api/products", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -125,7 +125,7 @@ export default function ProductList() {
     if (!result.isConfirmed) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const res = await fetch(`https://botbck25.onrender.com/api/products/${id}`, {
         method: "DELETE",
       });
       if (!res.ok) throw new Error("No se pudo borrar producto");
