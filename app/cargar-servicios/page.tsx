@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import styles from '../Styles/cargarServicio.module.css';
+import styles from '../Styles/CargarServicio.module.css';
 import Swal from 'sweetalert2';
 
 interface Servicio {
