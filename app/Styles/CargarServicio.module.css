@@ -3,11 +3,12 @@
     margin: 0 auto;
     padding: 1rem;
     font-family: sans-serif;
+    color: #000 !important;
   }
   
   .title, .subtitle {
     text-align: center;
-    color: #2e7d32;
+    
   }
   
   .form {
