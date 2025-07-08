@@ -21,8 +21,8 @@ const menuItems = [
     image: '/assets/atencion.jpg',
   },
   {
-    href: '/cargar-humano',
-    label: 'Cargar Humano',
+    href: '/cargar-servicios',
+    label: 'Cargar servicios',
     image: '/assets/atencion.jpg',
   },
 ]
