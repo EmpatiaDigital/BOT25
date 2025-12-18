@@ -63,7 +63,7 @@ export default function Home() {
         await axios.get('https://botbck25.onrender.com/api/logout');
         Swal.fire('Sesión cerrada', 'El bot se desconectó.', 'info');
       } else {
-        await axios.get('http://localhost:5000/api/qr');
+        await axios.get('https://botbck25.onrender.com/api/qr');
         Swal.fire('Intentando iniciar sesión...', 'Escaneá el QR si aparece.', 'info');
       }
       await checkStatus();
