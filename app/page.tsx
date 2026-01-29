@@ -22,6 +22,7 @@ export default function Home() {
     }
   };
 
+  
   const checkStatus = async () => {
     try {
       const res = await axios.get('https://botbck25.onrender.com/api/status');
